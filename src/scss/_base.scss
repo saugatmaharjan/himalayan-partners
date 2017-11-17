@@ -1,0 +1,57 @@
+.container{
+  @media (min-width:1400px){
+    max-width: 1400px;
+  }
+}
+
+.content--block{
+  padding: 100px 0;
+}
+
+.content--block__title{
+  font-weight: bold;
+  max-width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: $primary;
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-bottom: 70px;
+}
+
+.card{
+  max-width: 354px;
+  padding: 25px;
+  border-radius: 8px;
+	background-color: white;
+  box-shadow: 0 2px 30px 0 rgba(3, 143, 227, 0.1);
+  border: none;
+}
+
+.btn{
+  height: 46px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 42px;
+  border-radius: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-transform: uppercase;
+}
+
+.btn__ghost{
+  background: transparent;
+}
+
+.btn__ghost--white{
+  color: white;
+  border: 2px solid white;
+}
+
+.btn__ghost--primary{
+  color: $primary;
+  border: 2px solid $primary;
+}

@@ -1,0 +1,16 @@
+.partner-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.wrapper__img--partner{
+  width: 33.33%;
+  overflow: hidden;
+  max-height: 330px;
+  overflow: hidden;
+
+  img{
+    max-width: 100%;
+  }
+}

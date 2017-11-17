@@ -1,0 +1,33 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $primary;
+  padding: 16px 0;
+  z-index: 10000;
+}
+
+nav{
+  ul{
+    padding: 0 15px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li{
+      list-style: none;
+
+      >a{
+        display: block;
+        height: 4em;
+        font-size: 0.8em;
+        line-height: 4em;
+        color: #fff;
+        padding: 0 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

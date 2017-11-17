@@ -1,0 +1,46 @@
+.cards-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__about{
+  min-height: 440px;
+  
+  .number{
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: bold;
+    color: $primary;
+  }
+}
+
+.card__about__content{
+  width: 85%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  .img{
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: lighten($primary, 50%);
+    margin-bottom: 24px;
+  }
+
+  label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1em;
+    color: $primary;
+    margin-bottom: 1em;
+  }
+  
+  p{
+    color: lighten(#000000, 50%);
+    margin-bottom: 0;
+  }
+}

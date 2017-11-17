@@ -1,0 +1,68 @@
+footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $primary;
+  color: white;
+
+  input{
+      display: block;
+      width: 100%;
+      height: 46px;
+      line-height: 46px;
+      background: transparent;
+      border: 1px solid white;
+      padding: 0 1em;
+      color: white;
+      margin-bottom: 30px;
+
+      &:last-of-type{
+        margin-bottom: 12px;
+      }
+
+      &:focus{
+          outline: none;
+      }
+  }
+
+  textarea{
+      @extend input;
+      height: 158px;
+      line-height: 1.5em;
+      padding: 1em;
+  }
+
+  .light-text{
+    color: transparentize(#ffffff, 0.4);
+  }
+
+  .btn--apply{
+    margin-bottom: 60px;
+  }
+
+  label{
+    margin-bottom: 12px;
+  }
+}
+
+.content--block--about__title{
+  color: white;
+}
+
+.label--social,.label--apply{
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.icon--social{
+  margin-right: 10px;
+}
+
+.btn--send{
+  height: 46px;
+  line-height: 46px;
+  padding: 0 2em;
+  border: 1px solid white;
+  background: transparentize(#ffffff, 0.9);
+  color: white;
+  margin-top: 24px;
+}
