@@ -1,11 +1,33 @@
 header{
   position: fixed;
-  top: 0;
-  left: 0;
   right: 0;
-  background: $primary;
-  padding: 16px 0;
+  left: 0;
+  top: 0;
+  padding: 24px 0;
   z-index: 10000;
+
+  &.has-background{
+    background: transparentize($primary, 0.1);
+  }
+}
+
+.headroom {
+  will-change: transform;
+  transition: all 300ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+.navbar-wrapper{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 nav{
@@ -21,13 +43,51 @@ nav{
 
       >a{
         display: block;
-        height: 4em;
         font-size: 0.8em;
-        line-height: 4em;
         color: #fff;
         padding: 0 16px;
+        letter-spacing: 0.75px;
         text-transform: uppercase;
+        border-radius: 4px;
+        opacity: 0.8;
+
+        &:hover{
+          opacity: 1;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      &.active{
+        >a{
+          position: relative;
+          opacity: 1;
+
+          &:after{
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.6;
+          }
+        }
       }
     }
+  }
+}
+
+.btn__ghost__join{
+  box-shadow: 0 0 0 0 transparentize(#fff, 0.4);
+  transition: all 0s ease-in-out;
+
+  &:hover{
+    color: #fff;
+    box-shadow: 0 0 75px 10px transparentize(#fff, 1);
+    transition: all 0.3s ease-in-out;
   }
 }

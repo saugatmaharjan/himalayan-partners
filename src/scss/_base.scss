@@ -1,3 +1,26 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+input,textarea,button,select{
+    font-family: 'Quicksand', sans-serif!important;
+
+    &:focus{
+      outline: none;
+    }
+}
+
+button{
+  cursor: pointer;
+}
+
+input,textarea{
+  &:focus{
+    background: rgba(0,0,0,0.05);
+  }
+}
+
 .container{
   @media (min-width:1400px){
     max-width: 1400px;
@@ -5,6 +28,8 @@
 }
 
 .content--block{
+  position: relative;
+  z-index: 100;
   padding: 100px 0;
 }
 
@@ -34,12 +59,19 @@
   font-size: 13px;
   font-weight: bold;
   line-height: 42px;
+  letter-spacing: 0.75px;
   border-radius: 30px;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 1.5em;
   padding-right: 1.5em;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:active{
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
+  }
 }
 
 .btn__ghost{

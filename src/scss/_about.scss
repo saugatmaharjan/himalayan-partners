@@ -6,6 +6,11 @@
 
 .card__about{
   min-height: 440px;
+
+  @media (max-width: 768px){
+    max-width: 31%;
+    padding: 14px;
+  }
   
   .number{
     font-size: 1.5em;
@@ -21,12 +26,12 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media (max-width: 768px){
+     width: 100%;
+  }
+
   .img{
     display: inline-block;
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-    background: lighten($primary, 50%);
     margin-bottom: 24px;
   }
 

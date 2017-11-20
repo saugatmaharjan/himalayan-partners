@@ -23,7 +23,12 @@ var styles = [
 var scripts = [
   'src/js/vendor/modernizr-3.5.0.min.js',
   'src/js/vendor/jquery-3.2.1.min.js',
+  'src/js/vendor/ScrollMagic.min.js',
+  'src/js/vendor/debug.addIndicators.min.js',
+  'src/js/vendor/animation.gsap.min.js',
+  'src/js/vendor/headroom.min.js',
   'src/js/plugins.js',
+  'src/js/animations.js',
   'src/js/main.js',
 ]
 
